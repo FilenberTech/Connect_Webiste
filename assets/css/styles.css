@@ -1,5 +1,82 @@
 
 
+/* fixed social*/
+#fixed-social {
+   position: fixed;
+   top: 130px;
+   z-index: 9999;
+}
+
+#fixed-social a {
+   color: #fff;
+   display: block;
+   height: 40px;
+   position: relative;
+   text-align: center;
+    line-height: 40px;
+   width: 40px;
+   margin-bottom: 1px;
+   z-index: 2;
+}
+#fixed-social a:hover>span{
+	visibility: visible;
+  left: 41px;
+  opacity: 1;
+} 
+#fixed-social a span {
+	line-height: 40px;
+    left: 60px;
+    position: absolute;
+    text-align: center;
+    width: 120px;
+    visibility: hidden;
+    transition-duration: 0.5s;
+    z-index: 1;
+    opacity: 0;
+}
+ .fixed-facebook{
+ 	background-color: #00AAE5;
+ }
+ .fixed-facebook span{
+	background-color: #00AAE5;
+ }
+ .fixed-twitter{
+	background-color: #7D3895;
+
+ }
+ .fixed-twitter span{
+ 	background-color: #7D3895;
+ }
+ .fixed-gplus{
+	background-color: #00AF54;
+
+ }
+ .fixed-gplus span{
+ 	background-color: #00AF54;
+ }
+ .fixed-linkedin{
+	background-color: #FFC41E;
+
+ }
+ .fixed-linkedin span{
+ 	background-color: #FFC41E;
+ }
+ .fixed-instagrem{
+	background-color: #ED2B29;
+
+ }
+ .fixed-instagrem span{
+ 	background-color: #ED2B29;
+ }
+ .fixed-tumblr{
+	background-color: #EB1471;
+
+ }
+ .fixed-tumblr span{
+ 	background-color: #EB1471;
+ }
+/*end fixed social*/
+
 
 .carousel{
     margin-top: 100px;
@@ -331,7 +408,7 @@ h1{
       border-color: #8b9dc3;
       height: 50px;
       width: 400px;
-      border-radius: 20px;
+      border-radius: 50px;
       letter-spacing: 2px;
       font-size: 14px;
       padding-left: 15px;
@@ -432,7 +509,7 @@ h1{
 .modal-content{
     border-radius: 0px;
     text-align: center;
-   
+    background-color: transparent;
 }
 
 .bg-trans{
@@ -528,7 +605,7 @@ h1{
 
 
   .input-a{
-    border-radius: 10px;
+
     border-style: solid;
     height: 40px;
     width: 400px;
@@ -545,7 +622,7 @@ h1{
   }
 
   .input-b{
-    border-radius: 10px;
+
     border-style: solid;
     height: 150px;
     width: 400px;
@@ -764,27 +841,28 @@ h1{
   left: 0;
 }
 
+.box-shadow{
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
 
 .form3 {
-  position: relative;
-  z-index: 1;
-  background: rgb(255,255,255);
-  max-width: 960px;
-  margin: 0 auto 100px;
+  width: 100%;
   padding: 45px;
   text-align: center;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  
 }
 .form3 input {
   font-family: "Roboto", sans-serif;
-  outline: 0;
+  font-weight: 500;
   background: #f2f2f2;
+  color: #000;
   width: 100%;
   border: 0;
   margin: 0 0 15px;
   padding: 15px;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .form3 textarea {
@@ -796,21 +874,14 @@ h1{
   margin: 0 0 15px;
   padding: 15px;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .form3 button {
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  outline: 0;
+
+  width: 150px;
   background-color: #3b5998;
-  width: 100%;
-  border: 0;
-  padding: 15px;
-  color: #FFFFFF;
-  font-size: 14px;
-  -webkit-transition: all 0.3 ease;
-  transition: all 0.3 ease;
+  border-style: none;
   cursor: pointer;
 }
 .form3 button:hover,.form button:active,.form button:focus {
@@ -828,3 +899,27 @@ h1{
 .form3 .register-form {
   display: none;
 }
+
+
+
+
+
+.badge{
+  z-index: 99999999999;
+  position: fixed;
+  background: #EB1471;
+  color: #FFFFFF;
+  border-left-color: white;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+  margin-top: -30px;
+  margin-left: 35px;
+  box-shadow: 2px 2px 2px 2px rgb(255,255,255,.1);
+  
+}
+
+
